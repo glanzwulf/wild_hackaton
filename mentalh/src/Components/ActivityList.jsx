@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import Activity from './Activity'
-import './App.css'
+import './activity_data'
 
 export default function ActivityList(props) {
     return (
         <div className='ActivityList'>
-           <ul>
+            <ul>
                 {
-                    activities.map(activity => <li key={activity.name}>{...activity}</li>)
-                }
-            </ul> 
+                    activities.map((activity) => (
+                        <div key={activity}>
+                          <Activity activity={activity} />
+                        </div>
+                    ))}
+            </ul>
         </div>
     )
 }
