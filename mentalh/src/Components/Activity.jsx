@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css'
 
 export default function Activity({ name, emoji }) {
     return (
@@ -7,7 +6,7 @@ export default function Activity({ name, emoji }) {
             <div className="emoji">
                 <img 
                     src={emoji}
-                    alt="name"
+                    alt={name}
                 />
             </div>
             <div className="name">{name}</div>

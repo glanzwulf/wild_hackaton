@@ -21,11 +21,16 @@ function App() {
         <Happy />
         <Profile />
           {/* <Switch>
+        <ActivityList />
+        <MoodText />
+          <Switch>
             <Route exact path='/' component={ActivityList} />
             <Route path='/:name' component={ActivityDetails} />
           </Switch>
         <Footer />
       </Router> */}
+
+
     </div>
   );
 }
