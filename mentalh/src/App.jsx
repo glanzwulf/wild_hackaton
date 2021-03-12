@@ -17,6 +17,7 @@ function App() {
         <Navbar />*/}
         <Header /> 
         <Mood />
+        <ActivityList />
         {/* <MoodText />
           <Switch>
             <Route exact path='/' component={ActivityList} />
@@ -24,6 +25,8 @@ function App() {
           </Switch>
         <Footer />
       </Router> */}
+
+
     </div>
   );
 }
