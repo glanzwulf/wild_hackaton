@@ -5,7 +5,7 @@ import activities from './activity_data'
 export default function ActivityList(props) {
     return (
         <div className='ActivityList'>
-           <ul>
+            <ul>
                 {
                     activities.map((activity) => (
                         <div key={activity}>
