@@ -1,12 +1,13 @@
 import React from 'react';
 import moment from 'moment';
 
-const title = 'Hello!'
-let username = `Pedro`;
-const Date = moment().format('MMMM Do');
-const Day = moment().format('dddd'); 
-
-return (
+const Header = () => {
+    const title = 'Hello!'
+    let username = `Pedro`;
+    const Date = moment().format('MMMM Do');
+    const Day = moment().format('dddd'); 
+    
+    return (
     <div>
         {title}
         {username}
@@ -14,4 +15,6 @@ return (
         {Date}
     </div>
 )
+}
+
 export default Header;
