@@ -10,17 +10,17 @@ import Footer from './Components/Footer'
 function App() {
   return (
     <div className="App">
-      <Router>
+{/*       <Router>
         <Navbar />
-        <Header />
+        <Header /> */}
         <Mood />
-        <MoodText />
+        {/* <MoodText />
           <Switch>
             <Route exact path='/' component={ActivityList} />
             <Route path='/:name' component={ActivityDetails} />
           </Switch>
         <Footer />
-      </Router>
+      </Router> */}
     </div>
   );
 }
