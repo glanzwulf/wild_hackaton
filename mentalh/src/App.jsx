@@ -14,8 +14,8 @@ function App() {
   return (
     <div className="App">
 {/*       <Router>
-        <Navbar />
-        <Header /> */}
+        <Navbar />*/}
+        <Header /> 
         <Mood />
         {/* <MoodText />
           <Switch>
