@@ -10,3 +10,9 @@
 .graph{
     width: 350px;
 }
+
+.profile-name-btn{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+}
