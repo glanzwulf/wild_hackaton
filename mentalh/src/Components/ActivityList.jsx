@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Activity from './Activity'
-import './activity_data'
+import activities from './activity_data'
 
 export default function ActivityList(props) {
     return (
@@ -9,10 +9,10 @@ export default function ActivityList(props) {
                 {
                     activities.map((activity) => (
                         <div key={activity}>
-                          <Activity activity={activity} />
+                          <Activity name={activity} />
                         </div>
                     ))}
-            </ul>
+            </ul> 
         </div>
     )
 }
