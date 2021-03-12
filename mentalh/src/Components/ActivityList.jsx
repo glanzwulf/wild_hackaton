@@ -8,8 +8,8 @@ export default function ActivityList(props) {
             <ul>
                 {
                     activities.map((activity) => (
-                        <div key={activity}>
-                          <Activity name={activity} />
+                        <div key={activity.name}>
+                          <Activity name={activity.name} emoji={activity.emoji}/>
                         </div>
                     ))}
             </ul> 

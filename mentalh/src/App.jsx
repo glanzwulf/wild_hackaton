@@ -17,10 +17,11 @@ function App() {
       {/* <Router> */}
         {/* <Navbar /> */}
         <Header />
+        <ActivityList />
         <Mood />
         <Happy />
         <Profile />
-          {/* <Switch>
+                  {/* <Switch>
         <ActivityList />
         <MoodText />
           <Switch>
