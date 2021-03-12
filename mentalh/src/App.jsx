@@ -8,6 +8,9 @@ import ActivityDetails from './Components/ActivityDetails'
 import Footer from './Components/Footer'
 
 function App() {
+
+ 
+
   return (
     <div className="App">
       <Router>
