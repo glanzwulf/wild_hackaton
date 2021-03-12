@@ -6,7 +6,7 @@
 // import ActivityList from './Components/ActivityList'
 // import ActivityDetails from './Components/ActivityDetails'
 // import Footer from './Components/Footer'
-import Happy from './Components/Happy'
+import Happy from './Components/Happy';
 
 function App() {
   return (
