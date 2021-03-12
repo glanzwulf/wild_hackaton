@@ -1,0 +1,12 @@
+.Profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #456CB1;
+    color: white;
+}
+
+.graph{
+    width: 350px;
+}
