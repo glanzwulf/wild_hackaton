@@ -1,0 +1,48 @@
+.Mood {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #456CB1;
+    color: white;
+}
+
+.Moods {
+    display: flex;
+    justify-content: center;
+    background-color: #456CB1;
+}
+
+.MoodButton {
+    background-color: rgba(255, 255, 255, 0.53);
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.MoodButton p {
+    font-size: 24px;
+}
+
+.MoodButton:active{
+    background-color: rgba(255, 255, 255, 1);
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.MoodButton:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+}
