@@ -16,12 +16,12 @@ function App() {
     <div className="App">
       {/* <Router> */}
         {/* <Navbar /> */}
-        <Header />
-        <Mood />
-        <Happy />
+        {/* <Header /> */}
+        {/* <Mood /> */}
+        {/* <Happy /> */}
+        {/* <ActivityList /> */}
         <Profile />
           {/* <Switch>
-        <ActivityList />
         <MoodText />
           <Switch>
             <Route exact path='/' component={ActivityList} />
