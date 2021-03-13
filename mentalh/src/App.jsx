@@ -6,7 +6,8 @@
 // import ActivityList from './Components/ActivityList'
 // import ActivityDetails from './Components/ActivityDetails'
 // import Footer from './Components/Footer'
-import Happy from './Components/Happy';
+
+import Moodtext from './Components/Moodtext';
 
 function App() {
 
@@ -14,7 +15,9 @@ function App() {
 
   return (
     <div className="App">
-      <Happy />
+     
+      <Moodtext />
+      
       {/* <Router>
         <Navbar />
         <Header />
