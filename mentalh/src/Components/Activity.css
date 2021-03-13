@@ -1,0 +1,22 @@
+.emoji {
+    font-size: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Activity {
+    display: flex;
+    align-items: center;
+    width: 340px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: #4DC590;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.name {
+    text-decoration: none;
+}

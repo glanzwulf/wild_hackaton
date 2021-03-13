@@ -13,10 +13,10 @@ function App() {
 
   return (
     <div className="App">
-      <Moodtext />
-      {/* <Router>
-        <Navbar />
+       <Router> 
+        {/* <Navbar /> */}
         <Header />
+        <ActivityList />
         <Mood />
       {/* <Router> */}
         {/* <Navbar /> */}
@@ -25,14 +25,13 @@ function App() {
         {/* <Happy /> */}
         {/* <ActivityList /> */}
         <Profile />
-          {/* <Switch>
-        <MoodText />
-          <Switch>
-            <Route exact path='/' component={ActivityList} />
-            <Route path='/:name' component={ActivityDetails} />
+        {/* <MoodText /> */}
+        <Switch>
+        <Route exact path='/' component={ActivityList} />
+            <Route path='/name' component={ActivityDetails} />
           </Switch>
-        <Footer />
-      </Router> */}
+       { /*<Footer />*/ }
+      </Router> 
     </div>
   );
 }
