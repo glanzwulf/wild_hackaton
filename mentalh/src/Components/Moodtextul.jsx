@@ -11,7 +11,7 @@ export default function Moodtextul() {
             
            <h1>How are you feeling today?</h1>
 
-            <ul>
+            <ul className="MoodUl">
                 <li className="MoodButton"><Link to='/happy'><p>😀</p></Link></li>
                 <li className="MoodButton"><Link to='/lesshappy'><p>🙂</p></Link></li>
                 <li className="MoodButton"><Link to='/sad'><p>😐</p></Link></li>
