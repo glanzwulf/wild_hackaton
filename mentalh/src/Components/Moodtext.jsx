@@ -54,17 +54,17 @@ class Moodtext extends Component {
             <div className="Mood">
             <h1>How are you feeling today?</h1>  
             <div className="Moods">
-              <button className="MoodButton" onClick={() => this.hideComponent("showHideHappy")}>
-              <p>😀</p>
-              </button>
-              <button className="MoodButton" onClick={() => this.hideComponent("showHideLesshappy")}>
-              <p>🙂</p>
-              </button>
               <button className="MoodButton" onClick={() => this.hideComponent("showHideMoresad")}>
               <p>☹️</p>
               </button>
               <button className="MoodButton"onClick={() => this.hideComponent("showHideSad")}>
               <p>😐</p>
+              </button>
+              <button className="MoodButton" onClick={() => this.hideComponent("showHideHappy")}>
+              <p>😀</p>
+              </button>
+              <button className="MoodButton" onClick={() => this.hideComponent("showHideLesshappy")}>
+              <p>🙂</p>
               </button>
             </div>
           </div>

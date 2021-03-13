@@ -1,0 +1,16 @@
+
+.Navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    padding-right: 40px;
+    background-color: white;
+    margin-top: 0px;
+    height: 80px;
+}
+.Navigation li, a {
+    text-decoration: none;
+    margin: 10px;
+}

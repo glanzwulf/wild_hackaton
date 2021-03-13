@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App"> 
         <Navbar />
-        <ActivityList />
         <Switch>
             <Route exact path='/' component={MainPage} />
             <Route path='/name' component={ActivityDetails} />
