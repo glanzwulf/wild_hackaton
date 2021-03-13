@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Activity from './Activity'
+import { Link } from "react-router-dom";
 import activities from './activity_data'
 
 export default function ActivityList(props) {
@@ -8,9 +9,9 @@ export default function ActivityList(props) {
             <ul>
                 {
                     activities.map((activity) => (
-                        <div key={activity.name}>
+                        <Link to="/name" key={activity.name}>
                           <Activity name={activity.name} emoji={activity.emoji}/>
-                        </div>
+                        </Link>
                     ))}
             </ul> 
         </div>

@@ -14,22 +14,20 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Router> */}
+       <Router> 
         {/* <Navbar /> */}
         <Header />
         <ActivityList />
         <Mood />
         <Happy />
         <Profile />
-                  {/* <Switch>
-        <ActivityList />
-        <MoodText />
-          <Switch>
-            <Route exact path='/' component={ActivityList} />
-            <Route path='/:name' component={ActivityDetails} />
+        {/* <MoodText /> */}
+        <Switch>
+        <Route exact path='/' component={ActivityList} />
+            <Route path='/name' component={ActivityDetails} />
           </Switch>
-        <Footer />
-      </Router> */}
+       { /*<Footer />*/ }
+      </Router> 
 
 
     </div>

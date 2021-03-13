@@ -1,6 +1,6 @@
 const activities = [{
         name: "Breathing Exercise",
-        emoji: "😮‍💨"
+        emoji: "👃"
     },
     {
         name: "Exercise",
