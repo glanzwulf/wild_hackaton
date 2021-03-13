@@ -1,29 +1,20 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar'
-import Header from './Components/Header'
-import Mood from './Components/Mood'
-import ActivityList from './Components/ActivityList'
 import ActivityDetails from './Components/ActivityDetails'
-import Footer from './Components/Footer'
-import Happy from './Components/Happy';
-import Moodtext from './Components/Moodtext'
 import Profile from './Components/Profile'
+import MainPage from './Components/MainPage'
+import "./App.css"
 
 function App() {
 
   return (
-    <div className="App">
-       <Router> 
+    <div className="App"> 
         <Navbar />
-        <Header />
-        <Moodtext />
         <Switch>
-          <Route exact path='/' component={ActivityList} />
-          <Route path='/:name' component={ActivityDetails} />
+            <Route exact path='/' component={MainPage} />
+            <Route path='/name' component={ActivityDetails} />
+            <Route path='/profile' component={Profile} />
         </Switch>
-        <Profile />
-       <Footer />
-      </Router> 
     </div>
   );
 }
