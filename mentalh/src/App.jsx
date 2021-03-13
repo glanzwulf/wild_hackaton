@@ -3,7 +3,9 @@ import Navbar from './Components/Navbar'
 import ActivityDetails from './Components/ActivityDetails'
 import Profile from './Components/Profile'
 import MainPage from './Components/MainPage'
-
+import ActivityList from './Components/ActivityList'
+import ProfessionalList from './Components/ProfessionalList'
+import ProfessionalDetails from './Components/ProfessionalDetails'
 import "./App.css"
 
 import {Switch ,Route} from 'react-router-dom';
@@ -23,13 +25,14 @@ function App() {
        <Route path='/moresad' component={Moresad}/>
        <Route path='/sad' component={Sad}/>
      </Switch>
-
          <Navbar />
-        <Switch>
-            <Route exact path='/' component={MainPage} />
+         {/*<Switch>
+            {/* <Route exact path='/' component={MainPage} />
             <Route path='/name' component={ActivityDetails} />
             <Route path='/profile' component={Profile} />
-        </Switch> 
+            <Route exact path='/professionals' component={ProfessionalList} />
+            <Route path='/professionals/:id' component={ProfessionalDetails} />
+        </Switch>
     </div>
   );
 }
