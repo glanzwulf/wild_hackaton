@@ -1,14 +1,13 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import Moodtext from './Moodtext'
-import ActivityList from './ActivityList'
-
+import Moodtextul from './Moodtextul'
+import UseButton from './Usebutton'
 const MainPage = () => (
     <div>
         <Header />
-        <Moodtext />
-        <ActivityList />
+        <Moodtextul />
+        <UseButton />
         <Footer />
     </div>
 )
