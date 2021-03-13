@@ -42,3 +42,12 @@
 a{
     text-decoration: none;
 }
+
+.bookingform{
+    display:flex;
+    flex-direction: column;
+    width: 200px;
+}
+.inputdescription{
+    height: 100px;
+}
