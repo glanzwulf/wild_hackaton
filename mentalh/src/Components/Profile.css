@@ -8,7 +8,8 @@
 }
 
 .graph{
-    width: 350px;
+    width: 330px;
+    border-radius: 25px;
 }
 
 .profile-name-btn{
@@ -26,5 +27,27 @@
     border-radius: 20px;
     background-color: white;
     width:110px;
-   
+    margin-top: 10px;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(5, 166, 187);
+    border-radius: 25px;
+    padding: 10px 0px 10px 0px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.MoodsOverTime{
+    background-color: rgb(122, 35, 204);
+    border-radius: 25px;
+    margin:10px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }

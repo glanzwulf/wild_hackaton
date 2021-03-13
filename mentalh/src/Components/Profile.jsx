@@ -46,9 +46,13 @@ const Profile = () => {
                     </form>
                 )}
             </div>
-            <div>
-                <img className="image" src={userImage} alt="image" />
-                <button className="profileImage-btn" onClick={() => setShowForm1(!showForm1)}>Image Url</button>
+            <div className="image-container">
+                <div className="image-class">
+                <p>You can also share your profile image! Click the button below and give us a link!</p>
+                    <img className="image" src={userImage} alt="image" />
+                </div>
+                <div>
+                    <button className="profileImage-btn" onClick={() => setShowForm1(!showForm1)}>Image Url</button>
                 {showForm1 && (
                     <form>
                         <label className="image">
@@ -58,6 +62,7 @@ const Profile = () => {
                         <button onClick={handleSubmit1}>Submit Url</button>
                     </form>
                 )}
+            </div>
             </div>
             <div className="MoodsOverTime">
                 <h1>Moods over time</h1>

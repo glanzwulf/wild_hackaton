@@ -40,7 +40,7 @@ const ProfessionalDetails = (props) => {
     console.log(doctor)
 
     return (
-        <div>
+        <div className="doctor-container">
             <div className="doctor-image-container">
                 <img src={doctor.image} alt={doctor.title} />
             </div>

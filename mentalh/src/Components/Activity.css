@@ -38,3 +38,30 @@
     color: blueviolet;
     margin-left: 20px;
 }
+
+.activity-container {
+    background-color: white;
+    border-radius: 20px;
+    max-width: 360px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.activity-image{
+    display: flex;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.activity-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+}
