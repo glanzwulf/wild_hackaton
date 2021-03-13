@@ -1,3 +1,4 @@
+import { logDOM } from '@testing-library/react'
 import './footer.css'
 
 export default function Footer() {
