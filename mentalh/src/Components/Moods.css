@@ -7,11 +7,6 @@
     color: white;
 }
 
-.Moods {
-    display: flex;
-    justify-content: center;
-    background-color: #456CB1;
-}
 
 .MoodButton {
     background-color: rgba(255, 255, 255, 0.53);
@@ -23,11 +18,12 @@
     border-radius: 25px;
 }
 
-.MoodButton p {
-    font-size: 24px;
+.MoodButton a {
+    font-size: 25px;
+    text-decoration: none;
 }
 
-    
+
 
 .MoodButton:active{
     background-color: rgba(255, 255, 255, 1);
@@ -47,4 +43,16 @@
     display: flex;
     justify-content: center;
     border-radius: 25px;
+}
+
+.MoodUl {
+    max-width: 375px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #456CB1; 
+    
 }

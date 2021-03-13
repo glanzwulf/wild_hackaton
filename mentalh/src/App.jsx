@@ -1,10 +1,17 @@
-import { Switch, Route } from 'react-router-dom';
+
 import Navbar from './Components/Navbar'
 import ActivityDetails from './Components/ActivityDetails'
-import ActivityList from './Components/ActivityList'
 import Profile from './Components/Profile'
 import MainPage from './Components/MainPage'
+import ActivityList from './Components/ActivityList'
+import ProfessionalList from './Components/ProfessionalList'
+import ProfessionalDetails from './Components/ProfessionalDetails'
 import "./App.css"
+import {Switch ,Route} from 'react-router-dom';
+import Happy from './Components/Happy';
+import Lesshappy from './Components/Lesshappy';
+import Moresad from './Components/Moresad';
+import Sad from './Components/Sad';
 
 function App() {
 
@@ -12,14 +19,25 @@ function App() {
 
   return (
     <div className="App"> 
+  
+    <Switch>
+      <Route exact path='/' component={MainPage} />
+      <Route  path='/happy' component={Happy}/>
+      <Route path='/lesshappy' component={Lesshappy}/>
+      <Route path='/moresad' component={Moresad}/>
+      <Route path='/sad' component={Sad}/>
+      <Route path='/profile' component={Profile} />
+      <Route exact path='/professional' component={ProfessionalList} />
+      <Route path='/professionals/:id' component={ProfessionalDetails} />
+      
+    </Switch>
         <Navbar />
-        <Switch>
+        {/* <Switch>
             <Route exact path='/' component={MainPage} />
-            <Route path='/activity' component={ActivityList} />
-            <Route path='/activity/:id' component={ActivityDetails} />
-            <Route path='/profile' component={Profile} />
-        </Switch>
-        {loader}
+            <Route path='/name' component={ActivityDetails} />
+            <Route exact path='/professionals' component={ProfessionalList} />
+            <Route path='/professionals/:id' component={ProfessionalDetails} />
+        </Switch> */}
     </div>
   );
 }
