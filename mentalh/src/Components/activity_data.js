@@ -1,18 +1,27 @@
 const activities = [{
-        name: "Breathing Exercise",
-        emoji: "👃"
+    name: "General",
+    emoji: "🎶",
+    backgroundC: "#4DC590"
     },
     {
-        name: "Exercise",
-        emoji: "💪",
-    },
-    {
-        name: "General",
-        emoji: "🎶",
-    },
-    {
-        name: "yoga",
+        name: "Yoga",
         emoji: "🧘",
+        backgroundC: "#67BBDB"
+    },
+    {
+        name: "Physical Exercise",
+        emoji: "💪",
+        backgroundC: "#FF7648"
+    },
+    {
+        name: "Breathing Exercise",
+        emoji: "👃",
+        backgroundC: "#8F98FF"
+    },
+    {
+        name: "Gaming",
+        emoji: "🎮",
+        backgroundC: "#F3267C"
     }
 ]
 
