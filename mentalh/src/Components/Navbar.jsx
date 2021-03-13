@@ -22,9 +22,9 @@ import './Navbar.css'
         className='navbar'
       >
         <BottomNavigationAction label="Home" component={Link} to='/' icon={<HomeIcon/>} />
-        <BottomNavigationAction label="Activity" component={Link} to='/activity' icon={<AccessibilityNewIcon />} />
+        <BottomNavigationAction label="Activities" component={Link} to='/activity' icon={<AccessibilityNewIcon />} />
+        <BottomNavigationAction label="Doctor" component={Link} to='/professional' icon={<LocalHospitalIcon />} />
         <BottomNavigationAction label="Profile" component={Link} to='/profile'icon={<AccountBoxIcon />} />
-        <BottomNavigationAction label="Professional" component={Link} to='/ProfessionalList' icon={<LocalHospitalIcon />} />
       </BottomNavigation>
     );
   }

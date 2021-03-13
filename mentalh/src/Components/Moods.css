@@ -18,9 +18,9 @@
     border-radius: 25px;
 }
 
-.MoodButton p {
+.MoodButton a {
     font-size: 25px;
-    
+    text-decoration: none;
 }
 
 
@@ -44,16 +44,15 @@
     justify-content: center;
     border-radius: 25px;
 }
-ul {
+
+.MoodUl {
+    max-width: 375px;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
-  }
-  ul{
     display: flex;
     justify-content: center;
     background-color: #456CB1; 
-  }
-  
+    
+}

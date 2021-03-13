@@ -6,7 +6,7 @@ const ProfessionalCard = (props) => {
     const { doctor } = props
 
     return (
-        <Link to={{ pathname: `/${doctor.id}`}}>
+        <Link to={{ pathname: `/professionals/${doctor.id}`}}>
             <div className="doctor-container">
                 <div className="image-box"><img src={doctor.image} alt={doctor.name}/></div>
                 <div className="text-container">

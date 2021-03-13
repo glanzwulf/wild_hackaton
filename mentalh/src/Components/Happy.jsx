@@ -15,7 +15,6 @@ export default class Happy extends Component {
         return (
 
             <div className="happy">
-               
                 <Header />
                 <Moodtextul />
             <h2>Thank you,Your response has been recorded.</h2>
