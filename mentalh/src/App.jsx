@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar'
 import ActivityDetails from './Components/ActivityDetails'
 import Profile from './Components/Profile'
 import MainPage from './Components/MainPage'
+import ActivityList from './Components/ActivityList'
 import "./App.css"
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="App"> 
         <Navbar />
+        <ActivityList />
         <Switch>
             <Route exact path='/' component={MainPage} />
             <Route path='/name' component={ActivityDetails} />
