@@ -1,4 +1,6 @@
 export default function Footer() {
+        return ( 
+            
         <footer className="footer">
             <div className='footertop'>
                 <div></div>
@@ -6,5 +8,5 @@ export default function Footer() {
                 <div></div>
             </div>
             <div className='footerbotton'><p>Copyright © 2021</p></div>
-        </footer>
+        </footer> )
 }
