@@ -1,16 +1,23 @@
 import React, { useState } from 'react';
 import moment from 'moment';
 import './Profile.css'
-
 const Profile = () => {
     const Day = moment().format('dddd'); 
     const [showForm, setShowForm] = useState(false);
     const [userName, setUserName] = useState("")
-
+    const [headingText, setHeading] = useState("");
+    function handleChange(event) {
+        setUserName(event.target.value);
+    }
+    function handleSubmit(event) {
+        event.preventDefault();
+        setHeading(userName)
+        setShowForm(!showForm)
+    }
     return (
         <div className="Profile">
             <div className="ProfileHeader">
-                <h1>Hello {userName}</h1>
+                <h1>Hello {headingText}</h1>
                 <h3>Today is: {Day}</h3>
                 <p>We would like to get to know you a little bit better. What's your name?</p>
                 <button className="profile-name-btn" onClick={() => setShowForm(!showForm)}>This will be a button with onclick open form</button>
@@ -18,9 +25,9 @@ const Profile = () => {
                     <form>
                     <label>
                         Name:
-                        <input type="text" onChange={e => setUserName(e.target.value)}/>
+                        <input type="text" onChange={handleChange} value={userName}/>
                         </label>
-                        <input type="submit" value="Submit"/>
+                        <button onClick={handleSubmit}>Submit</button>
                     </form>
                 )}
             </div>
@@ -32,5 +39,4 @@ const Profile = () => {
         </div>
 )
 }
-
 export default Profile;
