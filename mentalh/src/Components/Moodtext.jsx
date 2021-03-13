@@ -23,33 +23,34 @@ class Moodtext extends Component {
       console.log(name);
       switch (name) {
         case "showHideHappy":
-          this.setState({ showHideHappy: this.state.showHideHappy });
+          this.setState({ showHideHappy: this.state.showHideHappy ||( !this.state.showHideLesshappy&&(!this.state.showHideMoresad) && (!this.state.showHideSad))});
           break;
         case "showHideLesshappy":
-          this.setState({ showHideLesshappy: this.state.showHideLesshappy });
+          this.setState({ showHideLesshappy: this.state.showHideLesshappy ||( !this.state.showHideHappy && (!this.state.showHideMoresad) && (!this.state.showHideSad ))});
           break;
         case "showHideMoresad":
-          this.setState({ showHideMoresad: this.state.showHideMoresad });
+          this.setState({ showHideMoresad: this.state.showHideMoresad ||(!this.state.showHideHappy && (!this.state.showHideLesshappy) && (!this.state.showHideSad))});
           break;
           case "showHideSad":
-          this.setState({ showHideSad: this.state.showHideSad });
+          this.setState({ showHideSad: this.state.showHideSad || (!this.state.showHideHappy && (!this.state.showHideMoresad )&& (!this.state.showHideLesshappy ))});
           break;
         default:
           this.setState(null);
       }
     }
+    
     render(){
         const { showHideHappy, showHideLesshappy, showHideMoresad,showHideSad } = this.state;
         return (
           <div>
-            {/* {showHideHappy && <Happy />}
+             {/* {showHideHappy && <Happy />}
             <hr />
             {showHideLesshappy && <Lesshappy />}
             <hr />
             {showHideMoresad && <Moresad />}
             <hr />
             {showHideSad && <Sad/>}
-            <hr /> */}
+            <hr />  */}
             <div className="Mood">
             <h1>How are you feeling today?</h1>  
             <div className="Moods">
@@ -69,14 +70,10 @@ class Moodtext extends Component {
           </div>
           <Usebutton />
           {showHideHappy && <Happy />}
-    
             {showHideLesshappy && <Lesshappy />}
-
             {showHideMoresad && <Moresad />}
-        
             {showHideSad && <Sad/>}
-            
-        
+
           </div>
     
         );
