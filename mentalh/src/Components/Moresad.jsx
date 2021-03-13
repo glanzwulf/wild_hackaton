@@ -1,4 +1,4 @@
-
+import './Moodtext.css';
 import React, { Component } from 'react'
 
 export default class Moresad extends Component {

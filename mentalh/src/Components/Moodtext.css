@@ -1,6 +1,26 @@
 .happy{
     background-color:#456CB1 ;
+    color: white;
     width:400px;
     height:180px;
-    
+}
+
+.lesshappy {
+    color: white;
+    background-color:#456CB1 ;
+}
+
+.sad {
+    color: white;
+    background-color:#456CB1 ;
+}
+
+.moresad{
+    color: white;
+    background-color:#456CB1 ;
+}
+
+.usebutton {
+    color: white;
+    background-color:#456CB1 ;
 }

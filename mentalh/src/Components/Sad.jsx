@@ -1,5 +1,5 @@
-
 import React, { Component } from 'react'
+import './Moodtext.css';
 
 export default class Sad extends Component {
     constructor(){

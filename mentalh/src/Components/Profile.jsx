@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import moment from 'moment';
+import Navbar from './Navbar'
 import './Profile.css'
+
 const Profile = () => {
     const Day = moment().format('dddd'); 
     const [showForm, setShowForm] = useState(false);
@@ -14,13 +16,15 @@ const Profile = () => {
         setHeading(userName)
         setShowForm(!showForm)
     }
+    <Navbar />
+    
     return (
         <div className="Profile">
             <div className="ProfileHeader">
                 <h1>Hello {headingText}</h1>
                 <h3>Today is: {Day}</h3>
                 <p>We would like to get to know you a little bit better. What's your name?</p>
-                <button className="profile-name-btn" onClick={() => setShowForm(!showForm)}>This will be a button with onclick open form</button>
+                <button className="profile-name-btn" onClick={() => setShowForm(!showForm)}>Change name</button>
                 {showForm && (
                     <form>
                     <label>
