@@ -16,6 +16,8 @@ import Sad from './Components/Sad';
 
 function App() {
 
+  const [loader, showLoader, hideLoader] = useFullPageLoader()
+
   return (
     <div className="App"> 
     <Switch>
