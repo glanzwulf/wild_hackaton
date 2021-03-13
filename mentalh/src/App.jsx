@@ -8,6 +8,8 @@ import "./App.css"
 
 function App() {
 
+  const [loader, showLoader, hideLoader] = useFullPageLoader()
+
   return (
     <div className="App"> 
         <Navbar />
@@ -17,6 +19,7 @@ function App() {
             <Route path='/activity/:id' component={ActivityDetails} />
             <Route path='/profile' component={Profile} />
         </Switch>
+        {loader}
     </div>
   );
 }

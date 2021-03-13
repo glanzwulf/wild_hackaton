@@ -1,3 +1,20 @@
-html, body {
-  background-color:#456CB1 ;
+html,
+body {
+    background-color: #456CB1;
+}
+
+.fp-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+.fp-container .fp-loader {
+    top: 30%;
+    left: 48%;
+    z-index: 2;
+    position: absolute;
 }
