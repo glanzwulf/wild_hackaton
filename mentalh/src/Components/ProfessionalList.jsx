@@ -16,8 +16,6 @@ const ProfessionalList = () => {
         })
     });
 
-    console.log(doctor)
-
         return (
         <section className="ProfessionalList">
             <Navbar />

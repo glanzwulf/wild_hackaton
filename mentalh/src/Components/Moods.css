@@ -48,11 +48,11 @@
 .MoodUl {
     max-width: 375px;
     list-style-type: none;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
     overflow: hidden;
     display: flex;
     justify-content: center;
     background-color: #456CB1; 
-    
 }
