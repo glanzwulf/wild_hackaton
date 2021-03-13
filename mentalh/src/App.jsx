@@ -1,3 +1,4 @@
+import Moodtext from './Components/Moodtext';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar'
 import Header from './Components/Header'
@@ -10,8 +11,6 @@ import Profile from './Components/Profile'
 
 function App() {
 
- 
-
   return (
     <div className="App">
        <Router> 
@@ -19,7 +18,12 @@ function App() {
         <Header />
         <ActivityList />
         <Mood />
-        <Happy />
+      {/* <Router> */}
+        {/* <Navbar /> */}
+        {/* <Header /> */}
+        {/* <Mood /> */}
+        {/* <Happy /> */}
+        {/* <ActivityList /> */}
         <Profile />
         {/* <MoodText /> */}
         <Switch>
@@ -28,8 +32,6 @@ function App() {
           </Switch>
        { /*<Footer />*/ }
       </Router> 
-
-
     </div>
   );
 }
