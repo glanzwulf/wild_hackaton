@@ -1,26 +1,34 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import axios from 'axios';
 
  const ActivityDetails = (props) => {
-    const [description, setDescription] = useState([]);
-    const activityId = props.match.params.id;
-
+    const activityId = props.match.params.id
+    const [activity, setActivity] = useState([]);
+    console.log(activityId)
     useEffect(() => {
         axios
-        .get(`https://a.nacapi.com/Activity/${activityId}`)
+        .get(`https://a.nacapi.com/George-Stacy-OliveDrab/${activityId}`)
         .then((res) => {
-            setDescription(res.data);
+            setActivity(res.data);
         })
-    }, [activityId]);     
-    console.log(activityId)
+    }, [activityId]);  
+
+    console.log(activity)
+    console.log(activity.yogaPose)
+
     return (
-        <div className="ActivityDetails">
-            <Link to={{pathname: '/'}}>Go back</Link>
-           {/*<h2>{ActivityName}:</h2>*/}
-            <p>Home</p>
+        <div>
+            {/* <div className="activity-container">
+                <img src={activity.image} alt={activity.title}/> 
+            </div> */}
+            <div className="doctor-details">
+                <h1>Name</h1>
+                <p>{activity.yogaPose1}</p>
+                <h1>Description</h1>
+                <p>{activity.yogaPose2}</p>
+            </div>
         </div>
     )
 }
 
-export default ActivityDetails
+export default ActivityDetails;
