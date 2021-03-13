@@ -10,7 +10,7 @@ export default function ActivityList(props) {
             <div>
                 {
                     activities.map((activity) => (
-                        <Link to="/name" key={activity.name}>
+                        <Link to="/:id" key={activity.name}>
                           <Activity name={activity.name} emoji={activity.emoji} backgroundC={activity.backgroundC}/>
                         </Link>
                     ))}
