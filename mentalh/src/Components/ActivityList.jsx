@@ -17,12 +17,13 @@ const ActivityList = () => {
     
     return (
         <div className='ActivityList'>
-            <div>
+            <div className="actiBox">
                 <h1 className="act-h1">Activities</h1>
                 {
                 activity.map((activity) => (
                         <Activity key={activity.id} activity={activity} />
                 ))}
+                <div className="ActivityBox"></div>
             </div> 
         </div>
     )

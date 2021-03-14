@@ -4,7 +4,7 @@ import './Moods.css'
 const Mood = () => {
     return (
         <section className="Mood">
-                <h1>How are you feeling today?</h1>
+                <h2>How are you feeling today?</h2>
                 <div className="Moods">
                     <div className="MoodButton">
                         <p>☹️</p>

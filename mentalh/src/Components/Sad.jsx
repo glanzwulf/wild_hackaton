@@ -16,13 +16,12 @@ export default class Sad extends Component {
     render() {
         return (
             <div className="sad">
-                 <Header />
+                <Header />
                 <Moodtextul />
-            <h2>Sorry to hear that, Your response has been recorded.</h2>
-            <p> you know, we've all been there and sometimes there are days like that</p>
-            <p>However, we also have something that can help you cheer up 👍</p>
+            <h2 className="moodtextstuff">Sorry to hear that. 🙁 Your response has been recorded.</h2>
+            <p className="moodtextstuff">You know, we've all been there and sometimes there are days like that. It happens.</p>
+            <p className="moodtextstuff">But we do have just the right thing to help you cheer up 👍</p>
             <ActivityList />
-            
         </div>
         )
     }

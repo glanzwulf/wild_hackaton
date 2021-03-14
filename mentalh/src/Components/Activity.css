@@ -1,12 +1,15 @@
 .ActivityList{
     background-color: white;
-    width: 100%;
+    width: 375px;
     height: 100%;
-    padding: 20px 10px 10px 10px;
+    margin-top: 20px;
+    padding: 20px 0px 20px 0px;
     border-radius: 25px 25px 0px 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    -webkit-box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.1);
 }
 .ActivityList a {
     text-decoration: none;
@@ -35,8 +38,17 @@
 }
 
 .act-h1{
-    color: blueviolet;
-    margin-left: 20px;
+    color: #282892;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.act-p{
+    color:#282892;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .activity-container {
@@ -47,6 +59,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .activity-image{
@@ -64,4 +78,19 @@
     max-width: 340px;
     margin-left: auto;
     margin-right: auto;
+    
+}
+
+.ActivityBox{
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 700px;
+    height: 120px;
+    z-index: -1000;
+}
+
+.actiBox{
+    width: 100%;
 }

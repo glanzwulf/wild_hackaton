@@ -1,7 +1,7 @@
 .happy, .lesshappy, .sad, .moresad, .usebutton{
     background-color:#456CB1 ;
     color: white;
-    margin: 10px;
+    margin: 0px 10px 10px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,4 +9,10 @@
 
 .happy a{
     text-decoration: none;
+}
+
+.moodtextstuff{
+    margin-left: 5px;
+    margin-left: 5px;
+    width: 100%;
 }
