@@ -7,7 +7,7 @@ const Profile = () => {
     const Day = moment().format('dddd');
     const [showForm, setShowForm] = useState(false);
     const [userName, setUserName] = useState("")
-    const [headingText, setHeading] = useState("");
+    const [headingText, setHeading] = useState("Friend");
     const [showForm1, setShowForm1] = useState(false);
     const [userImage, setUserImage] = useState("https://images.pexels.com/photos/2821823/pexels-photo-2821823.jpeg?")
     function handleChange(event) {
@@ -33,33 +33,32 @@ const Profile = () => {
         <div className="Profile">
             <div className="ProfileHeader">
                 <h1>Hello {headingText}</h1>
-                <h3>Today is: {Day}</h3>
                 <p>We would like to get to know you a little bit better. What's your name?</p>
                 <button className="profile-name-btn" onClick={() => setShowForm(!showForm)}>Change name</button>
                 {showForm && (
-                    <form>
+                    <form className="change-form">
                         <label>
                             Name:
                         <input type="text" onChange={handleChange} value={userName} />
                         </label>
-                        <button onClick={handleSubmit}>Submit</button>
+                        <button className="submit-btn" onClick={handleSubmit}>Submit</button>
                     </form>
                 )}
             </div>
             <div className="image-container">
                 <div className="image-class">
                 <p>You can also share your profile image! Click the button below and give us a link!</p>
-                    <img className="image" src={userImage} alt="image" />
+                    <img className="profile-image" src={userImage} alt="image" />
                 </div>
                 <div>
                     <button className="profileImage-btn" onClick={() => setShowForm1(!showForm1)}>Image Url</button>
                 {showForm1 && (
-                    <form>
+                    <form className="change-form">
                         <label className="image">
                             Profile Picture:
                         <input type="text" onChange={handleChange1} value={userImage} />
                         </label>
-                        <button onClick={handleSubmit1}>Submit Url</button>
+                        <button className="submit-btn" onClick={handleSubmit1}>Submit Url</button>
                     </form>
                 )}
             </div>

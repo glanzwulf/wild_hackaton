@@ -23,27 +23,27 @@ import './Activity.css'
                 <div className="activity-details">
                     <img src={activity.yogaposeimage1} alt={activity.yogaposename1} className="activity-image"/> 
                     <h1 className="act-h1">Name</h1>
-                    <p className="act-h1">{activity.yogaposename1}</p>
+                    <p className="act-p">{activity.yogaposename1}</p>
                     <h1 className="act-h1">Description</h1>
-                    <p className="act-h1">{activity.yogaposedescription1}</p>
+                    <p className="act-p">{activity.yogaposedescription1}</p>
                 </div>
             </div>
             <div className="activity-container">
                 <div className="activity-details">
                     <img src={activity.yogaposeimage2} alt={activity.yogaposename2} className="activity-image"/> 
                     <h1 className="act-h1">Name</h1>
-                    <p className="act-h1">{activity.yogaposename2}</p>
+                    <p className="act-p">{activity.yogaposename2}</p>
                     <h1 className="act-h1">Description</h1>
-                    <p className="act-h1">{activity.yogaposedescription2}</p>
+                    <p className="act-p">{activity.yogaposedescription2}</p>
                 </div>
             </div>
             <div className="activity-container">
                 <div className="activity-details">
                     <img src={activity.yogaposeimage3} alt={activity.yogaposename3} className="activity-image"/> 
                     <h1 className="act-h1">Name</h1>
-                    <p className="act-h1">{activity.yogaposename3}</p>
+                    <p className="act-p">{activity.yogaposename3}</p>
                     <h1 className="act-h1">Description</h1>
-                    <p className="act-h1">{activity.yogaposedescription3}</p>
+                    <p className="act-p">{activity.yogaposedescription3}</p>
                 </div>
             </div>
         </div>

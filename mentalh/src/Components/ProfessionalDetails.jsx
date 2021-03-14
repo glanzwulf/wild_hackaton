@@ -68,7 +68,7 @@ const ProfessionalDetails = (props) => {
                         Time:
                         <input type="time" onChange={handleChangeTime} />
                         </label>
-                        <button>Submit</button>
+                        <button className="finalSubmit">Submit</button>
 
                     </form>
 

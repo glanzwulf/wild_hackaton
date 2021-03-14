@@ -12,7 +12,7 @@ const ProfessionalCard = (props) => {
                 <div className="text-container">
                     <h3>{doctor.name}</h3>
                     <h4>{doctor.title}</h4>
-                    <label>{doctor.rating}</label>
+                    <label>Rating: {doctor.rating}</label>
                 </div>
             </div>
         </Link>

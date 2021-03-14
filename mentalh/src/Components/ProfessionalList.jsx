@@ -1,6 +1,5 @@
 import ProfessionalCard from './ProfessionalCard'
 import React, { useState, useEffect } from 'react';
-import Navbar from './Header'
 import axios from 'axios'
 import './Professional.css';
 
@@ -18,10 +17,9 @@ const ProfessionalList = () => {
 
         return (
         <section className="ProfessionalList">
-            <Navbar />
             <div className="filterclass">
                 <button className="filter-doctors" onClick={() => setIsFiltered(!isFiltered)}>
-                    {isFiltered ? 'All Doctors' : 'Best Doctors'}
+                    {isFiltered ? 'Filter by all Doctors' : 'Filter by best Doctors'}
                 </button>
             </div>
             <div id="main1">

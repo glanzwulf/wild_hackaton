@@ -16,9 +16,9 @@ export default class Lesshappy extends Component {
             <div className="lesshappy">
                  <Header />
                 <Moodtextul />
-            <h2>Thank you,Your response has been recorded.</h2>
-            <p>Since you are in less good mood,how about we help you to make you more happy.</p>
-            <p>Here are some activities that will make you more happy 👍</p>
+            <h2 className="moodtextstuff">Thank you. 🙂 Your response has been recorded.</h2>
+            <p className="moodtextstuff">Looks like you could cheer up a little bit today.</p>
+            <p className="moodtextstuff">Here are some activities that will get you to 💯</p>
             <ActivityList />
         </div>
         )
