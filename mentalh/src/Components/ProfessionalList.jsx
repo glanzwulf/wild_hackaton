@@ -2,18 +2,22 @@ import ProfessionalCard from './ProfessionalCard'
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import './Professional.css';
+import UseFullPageLoader from './UseFullPageLoader'
 
 const ProfessionalList = () => {
     const [isFiltered, setIsFiltered] = useState(false);
     const [doctor, setDoctor] = useState([]);
+    const [loader, showLoader, hideLoader] = UseFullPageLoader()
 
     useEffect(() => {
+        showLoader();
         axios
         .get(`https://a.nacapi.com/Emu-IndianRed/`)
         .then((res) => {
-            setDoctor(res.data);
+            hideLoader();
+            setDoctor(res.data);            
         })
-    });
+    });   
 
         return (
         <section className="ProfessionalList">
@@ -37,6 +41,7 @@ const ProfessionalList = () => {
                     </div>
                     ))}
             </div>
+            {loader}
         </section>
     );
 };
