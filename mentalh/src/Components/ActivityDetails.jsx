@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
+import LoadingSpinner from "./LoadingSpinner";
 import './Activity.css'
 
  const ActivityDetails = (props) => {
     const activityId = props.match.params.id
     const [activity, setActivity] = useState([]);
-    console.log(activityId)
+    const [loading, setLoading] = useState(false);
     useEffect(() => {
         axios
         .get(`https://a.nacapi.com/George-Stacy-OliveDrab/${activityId}`)
         .then((res) => {
             setActivity(res.data);
+            setLoading(true);
         })
     }, [activityId]);  
 
-    console.log(activity)
-    console.log(activity.yogaPose)
-
     return (
+        <div>{loading ? (
         <div>
             <div className="activity-container">
                 <div className="activity-details">
@@ -47,6 +47,10 @@ import './Activity.css'
                 </div>
             </div>
         </div>
+        ) : (
+            <LoadingSpinner />
+            )}
+            </div>
     )
 }
 

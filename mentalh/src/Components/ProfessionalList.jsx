@@ -2,24 +2,25 @@ import ProfessionalCard from './ProfessionalCard'
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import './Professional.css';
-import UseFullPageLoader from './UseFullPageLoader'
+import LoadingSpinner from "./LoadingSpinner";
 
 const ProfessionalList = () => {
     const [isFiltered, setIsFiltered] = useState(false);
     const [doctor, setDoctor] = useState([]);
-    const [loader, showLoader, hideLoader] = UseFullPageLoader()
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        showLoader();
         axios
         .get(`https://a.nacapi.com/Emu-IndianRed/`)
         .then((res) => {
-            hideLoader();
-            setDoctor(res.data);            
+            setDoctor(res.data); 
+            setLoading(true);           
         })
+        
     });   
 
         return (
+            <div>{loading ? (
         <section className="ProfessionalList">
             <div className="filterclass">
                 <button className="filter-doctors" onClick={() => setIsFiltered(!isFiltered)}>
@@ -41,8 +42,11 @@ const ProfessionalList = () => {
                     </div>
                     ))}
             </div>
-            {loader}
-        </section>
+            </section>
+            ) : (
+        <LoadingSpinner />
+        )}
+        </div>
     );
 };
 

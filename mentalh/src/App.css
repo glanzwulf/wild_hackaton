@@ -3,18 +3,23 @@ body {
     background-color: #456CB1;
 }
 
-.fp-container {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: white;
+.LoadingSpinner-content{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  background: #456db17e;
 }
 
-.fp-container .fp-loader {
-    top: 30%;
-    left: 48%;
-    z-index: 2;
-    position: absolute;
-}
+.LoadingSpinner {
+  position: absolute;
+  top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+  
+  .LoadingSpinner .magnif {
+    z-index: 1000;
+  }
